@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surprise Gift</title>
+    <title>...CIPHER...</title>
     <style>
         body {
             display: flex;
@@ -13,15 +13,39 @@
             flex-direction: column;
             text-align: center;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #FFD1DC;
+            color: #333;
         }
         img {
             max-width: 80%;
             border-radius: 10px;
             margin-bottom: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
         #content {
             display: none;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        input {
+            padding: 8px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff69b4;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1493;
         }
     </style>
 </head>
@@ -34,13 +58,13 @@
     
     <div id="content">
         <h1>Happy Birthday!</h1>
-        <img src="your-image.jpg" alt="Concert Ticket">
-        <p>You have tickets to see [Band Name]!</p>
+        <img src="TMBG.png" alt="Concert Ticket">
+        <p>You have tickets to see <strong>They Might Be Giants</strong>!</p>
     </div>
 
     <script>
         function checkPassword() {
-            const password = "yourpassword"; // Change this
+            const password = "drworm";
             const input = document.getElementById("passwordInput").value;
             if (input === password) {
                 document.getElementById("passwordPrompt").style.display = "none";
